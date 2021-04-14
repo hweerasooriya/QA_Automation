@@ -1,0 +1,383 @@
+<html>
+<head><style type="text/css">h1 {background-color:#9999CC}
+h2 {background-color:#BBBBCC}
+h3 {background-color:#DDDDFF}
+th {border:1px solid black;background-color:#CCCCDD;}
+td{border:1px solid black;}
+table {border:1px solid black;border-collapse: collapse;}
+.chart {border:0px none black;border-collapse: collapse;background-color: none;}
+.passed {background-color:lightgreen;font-weight:bold;color:darkgreen}
+.skipped {background-color:silver;font-weight:bold;color:darkgray}
+.failed {background-color:tomato;font-weight:bold;color:darkred}
+.undefined {background-color:gold;font-weight:bold;color:goldenrod}
+.known {background-color:goldenrod;font-weight:bold;color:darkred}
+.passed_description {background-color:#D0FFD0;font-weight:bold;font-style:italic;color:black}
+.failed_description {background-color:#FFA898;font-weight:bold;font-style:italic;color:black}
+.comment {font-family:courier;font-weight:normal;font-size:small;color:black;border:1px dashed black;background-color:silver}
+.tip {font-family:courier;font-weight:normal;font-size:small;color:white;background-color:black}
+OL { counter-reset: item }
+OL>LI { display: block }
+OL>LI:before { content: counters(item, ".") " "; counter-increment: item }
+
+div.header {
+    display: block; text-align: center;
+    position: running(header);
+}
+div.footer {
+    display: block; text-align: center;
+    position: running(footer);
+}
+div.content {page-break-after: always;}
+@page {
+	 size: auto;
+     @top-center {
+     	content: "Detailed Results Report";
+	    color: silver;
+	    font-size: 14px;
+     }
+     @top-right {
+     	content: date("dd MMM, yyyy hh:mm");
+	    color: silver;
+	    font-size: 8px;
+     }
+    @bottom-right {
+    	content: "Page " counter(page) " of " counter(pages) ;
+	    color: silver;
+	    font-size: 8px;
+    }
+}
+</style>
+<title>Detailed Results Report</title>
+<meta charset="UTF-8" />
+</head>
+  <body>
+    <div class='header'></div>
+    <div class='footer'></div>
+<h1>Overview</h1>
+
+
+<table>
+	<tr><th></th><th>Passed</th><th>Failed</th><th>Known</th><th>Undefined</th><th>Total</th><th>%Passed</th></tr>
+	<tr><th>Features</th>
+		<td class="passed" id="features_passed">1</td>
+		<td class="failed" id="features_failed">0</td>
+		<td class="known" id="features_known">0</td>
+		<td class="undefined" id="features_undefined">0</td>
+		<td id="features_total">1</td>
+		<td id="features_rate">
+				100%
+		</td>
+	</tr>
+	<tr><th>Scenarios</th>
+		<td class="passed" id="scenarios_passed">5</td>
+		<td class="failed" id="scenarios_failed">0</td>
+		<td class="known" id="scenarios_known">0</td>
+		<td class="undefined" id="scenarios_undefined">0</td>
+		<td id="scenarios_total">5</td>
+		<td id="scenarios_rate">
+				100%
+		</td>
+	</tr>
+	<tr><th>Steps</th>
+		<td class="passed" id="steps_passed">40</td>
+		<td class="failed" id="steps_failed">0</td>
+		<td class="known" id="steps_known">0</td>
+		<td class="undefined" id="steps_undefined">0</td>
+		<td id="steps_total">40</td>
+		<td id="steps_rate">
+				100%
+		</td>
+	</tr>
+</table>
+<div><b>Overall Duration: 0h 01m 15s</b></div>
+
+<a id="top"></a><h1>Table of Contents</h1>
+
+<ol>
+<li> <span class="passed"><a href="#feature-20"></a></span>
+	<ol>
+        <li> <span class="passed"><a href="#sc-36-;sign-up-as-a-new-user-registration;;2">Sign Up as a new user registration</a></span></li>
+        <li> <span class="passed"><a href="#sc-37-;sign-up-as-a-new-user-registration;;3">Sign Up as a new user registration</a></span></li>
+        <li> <span class="passed"><a href="#sc-38-;sign-up-as-a-new-user-registration;;4">Sign Up as a new user registration</a></span></li>
+        <li> <span class="passed"><a href="#sc-39-;sign-up-as-a-new-user-registration;;5">Sign Up as a new user registration</a></span></li>
+        <li> <span class="passed"><a href="#sc-40-;sign-up-as-a-new-user-registration;;6">Sign Up as a new user registration</a></span></li>
+    </ol></li>
+</ol>
+
+<h1>Detailed Results Report</h1>
+
+<table width="700px">
+	<tr class="passed"><td colspan="4"><b>Feature:</b> <a id="feature-20"></a></td></tr>
+		<tr class="passed_description">
+            <td colspan="4"><br>New Users Creation Feature</br></td>
+        </tr>
+    <tr class="passed">
+    	<td><small><b>Passed:</b> 5</small></td>
+        <td><small><b>Failed:</b> 0</small></td>
+        <td><small><b>Undefined:</b> 0</small></td>
+        <td><small>Duration: 75.99s</small></td>
+    </tr>
+	<tr class="passed">
+		<td colspan="4" style="padding-left:20px">
+		<table width="100%">
+				<tr class="passed">
+					<td colspan="4">
+						<b>Scenario Outline:</b> <a id="sc-36-;sign-up-as-a-new-user-registration;;2">Sign Up as a new user registration</a>
+					</td>
+				</tr>
+                <tr class="passed">
+                	<td><small><b>Passed:</b> 8</small></td>
+                	<td><small><b>Failed:</b> 0</small></td>
+					<td><small><b>Undefined:</b> 0</small></td>
+					<td><small>Duration: 25.66s</small></td>
+				</tr>
+                <tr class="passed">
+	                <td colspan="4" style="padding-left:20px">
+						<table width="100%">
+                            	<tr class="passed">
+                            		<td><b>Given </b> User navigates to E Commerce application</td>
+                            		<td width="100">11.16s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User clicks on the &quot;Sign in&quot; button</td>
+                            		<td width="100">3.05s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User inputs E-mail Address from the   given sheet &quot;createAcct&quot; and rownumber 0</td>
+                            		<td width="100">0.82s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User click on the &quot;SubmitCreate&quot; button</td>
+                            		<td width="100">0.10s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>When </b> User inputs account details from the   given sheet &quot;createAcct&quot; and rownumber 0</td>
+                            		<td width="100">4.32s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> User clicks on &quot;Register&quot; Button</td>
+                            		<td width="100">3.11s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User navigates to the My Account Page</td>
+                            		<td width="100">0.06s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User clicks on the SignOut Button</td>
+                            		<td width="100">3.04s</td>
+                        		</tr>
+						</table>
+					</td>
+				</tr>
+				
+                <tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr>
+				<tr class="passed">
+					<td colspan="4">
+						<b>Scenario Outline:</b> <a id="sc-37-;sign-up-as-a-new-user-registration;;3">Sign Up as a new user registration</a>
+					</td>
+				</tr>
+                <tr class="passed">
+                	<td><small><b>Passed:</b> 8</small></td>
+                	<td><small><b>Failed:</b> 0</small></td>
+					<td><small><b>Undefined:</b> 0</small></td>
+					<td><small>Duration: 12.83s</small></td>
+				</tr>
+                <tr class="passed">
+	                <td colspan="4" style="padding-left:20px">
+						<table width="100%">
+                            	<tr class="passed">
+                            		<td><b>Given </b> User navigates to E Commerce application</td>
+                            		<td width="100">1.54s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User clicks on the &quot;Sign in&quot; button</td>
+                            		<td width="100">2.05s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User inputs E-mail Address from the   given sheet &quot;createAcct&quot; and rownumber 1</td>
+                            		<td width="100">0.23s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User click on the &quot;SubmitCreate&quot; button</td>
+                            		<td width="100">0.09s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>When </b> User inputs account details from the   given sheet &quot;createAcct&quot; and rownumber 1</td>
+                            		<td width="100">4.30s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> User clicks on &quot;Register&quot; Button</td>
+                            		<td width="100">2.10s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User navigates to the My Account Page</td>
+                            		<td width="100">0.06s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User clicks on the SignOut Button</td>
+                            		<td width="100">2.47s</td>
+                        		</tr>
+						</table>
+					</td>
+				</tr>
+				
+                <tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr>
+				<tr class="passed">
+					<td colspan="4">
+						<b>Scenario Outline:</b> <a id="sc-38-;sign-up-as-a-new-user-registration;;4">Sign Up as a new user registration</a>
+					</td>
+				</tr>
+                <tr class="passed">
+                	<td><small><b>Passed:</b> 8</small></td>
+                	<td><small><b>Failed:</b> 0</small></td>
+					<td><small><b>Undefined:</b> 0</small></td>
+					<td><small>Duration: 12.54s</small></td>
+				</tr>
+                <tr class="passed">
+	                <td colspan="4" style="padding-left:20px">
+						<table width="100%">
+                            	<tr class="passed">
+                            		<td><b>Given </b> User navigates to E Commerce application</td>
+                            		<td width="100">1.48s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User clicks on the &quot;Sign in&quot; button</td>
+                            		<td width="100">1.58s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User inputs E-mail Address from the   given sheet &quot;createAcct&quot; and rownumber 2</td>
+                            		<td width="100">0.25s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User click on the &quot;SubmitCreate&quot; button</td>
+                            		<td width="100">0.09s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>When </b> User inputs account details from the   given sheet &quot;createAcct&quot; and rownumber 2</td>
+                            		<td width="100">3.99s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> User clicks on &quot;Register&quot; Button</td>
+                            		<td width="100">2.79s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User navigates to the My Account Page</td>
+                            		<td width="100">0.05s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User clicks on the SignOut Button</td>
+                            		<td width="100">2.32s</td>
+                        		</tr>
+						</table>
+					</td>
+				</tr>
+				
+                <tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr>
+				<tr class="passed">
+					<td colspan="4">
+						<b>Scenario Outline:</b> <a id="sc-39-;sign-up-as-a-new-user-registration;;5">Sign Up as a new user registration</a>
+					</td>
+				</tr>
+                <tr class="passed">
+                	<td><small><b>Passed:</b> 8</small></td>
+                	<td><small><b>Failed:</b> 0</small></td>
+					<td><small><b>Undefined:</b> 0</small></td>
+					<td><small>Duration: 11.48s</small></td>
+				</tr>
+                <tr class="passed">
+	                <td colspan="4" style="padding-left:20px">
+						<table width="100%">
+                            	<tr class="passed">
+                            		<td><b>Given </b> User navigates to E Commerce application</td>
+                            		<td width="100">1.27s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User clicks on the &quot;Sign in&quot; button</td>
+                            		<td width="100">1.91s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User inputs E-mail Address from the   given sheet &quot;createAcct&quot; and rownumber 3</td>
+                            		<td width="100">0.23s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User click on the &quot;SubmitCreate&quot; button</td>
+                            		<td width="100">0.10s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>When </b> User inputs account details from the   given sheet &quot;createAcct&quot; and rownumber 3</td>
+                            		<td width="100">3.98s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> User clicks on &quot;Register&quot; Button</td>
+                            		<td width="100">1.61s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User navigates to the My Account Page</td>
+                            		<td width="100">0.05s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User clicks on the SignOut Button</td>
+                            		<td width="100">2.33s</td>
+                        		</tr>
+						</table>
+					</td>
+				</tr>
+				
+                <tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr>
+				<tr class="passed">
+					<td colspan="4">
+						<b>Scenario Outline:</b> <a id="sc-40-;sign-up-as-a-new-user-registration;;6">Sign Up as a new user registration</a>
+					</td>
+				</tr>
+                <tr class="passed">
+                	<td><small><b>Passed:</b> 8</small></td>
+                	<td><small><b>Failed:</b> 0</small></td>
+					<td><small><b>Undefined:</b> 0</small></td>
+					<td><small>Duration: 13.47s</small></td>
+				</tr>
+                <tr class="passed">
+	                <td colspan="4" style="padding-left:20px">
+						<table width="100%">
+                            	<tr class="passed">
+                            		<td><b>Given </b> User navigates to E Commerce application</td>
+                            		<td width="100">2.43s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User clicks on the &quot;Sign in&quot; button</td>
+                            		<td width="100">2.02s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User inputs E-mail Address from the   given sheet &quot;createAcct&quot; and rownumber 4</td>
+                            		<td width="100">0.20s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User click on the &quot;SubmitCreate&quot; button</td>
+                            		<td width="100">0.10s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>When </b> User inputs account details from the   given sheet &quot;createAcct&quot; and rownumber 4</td>
+                            		<td width="100">3.92s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> User clicks on &quot;Register&quot; Button</td>
+                            		<td width="100">2.12s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User navigates to the My Account Page</td>
+                            		<td width="100">0.05s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> User clicks on the SignOut Button</td>
+                            		<td width="100">2.63s</td>
+                        		</tr>
+						</table>
+					</td>
+				</tr>
+				
+                <tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr>
+		</table>
+	</td></tr><tr><td colspan="5"></td></tr>
+</table>
+
+	</body>
+</html>
